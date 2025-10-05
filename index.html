@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design</title>
+  <link rel="stylesheet" href="style.css"
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="/assets/logo1.png" alt="" class="logoimg">
+    </div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#">Platform </a></li>
+        <li><a href="#">Who We Serve</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Events</a></li>
+        <button class="btn-demo">Request a Demo</button>
+      </ul>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+         <div class="label-box">
+    <img src="/assets/Group 16318.png" alt="icon">
+    <span>Banner Section</span>
+  </div>
+      <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur. Pulvinar arcu netus lorem aliquam ultricies in scelerisque luctus.</p>
+      <div class="hero-buttons">
+        <button class="learnmore">Learn More<span> <strong> > </strong></span></button>
+        <button class="getdemo">Get a Demo</button>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="/assets/Banner.png" alt="Hero Image">
+    </div>
+  </section>
+
+<div class="grid-container">
+  <div class="grid-item color-one">
+    <img src="img_girl.jpg" alt="image1" class="image1">
+  <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur. Pulvinar arcu netus lorem aliquam ultricies in sce </p>
+
+  </div>
+  <div class="grid-item color-two">
+        <img src="img_girl.jpg" alt="image2" class="image1">
+
+  <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur. Pulvinar arcu netus lorem aliquam ultricies in sce </p>
+
+  </div>
+  <div class="grid-item color-three">
+        <img src="img_girl.jpg" alt="image3" class="image1">
+
+  <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur. Pulvinar arcu netus lorem aliquam ultricies in sce </p>
+
+  </div>
+</div>
+
+<section class="container marquee">
+<h1> Trusted by 500+ Companies</h1>
+<marquee behavior="scroll" direction="left">
+    <img src="../images/img_nat.png" width="120" height="80" alt="Natural" />
+  </marquee>
+</section>
+
+<section class="container tabs_first">
+    <div style="text-align:center;">
+      <div class="label-box">
+    <img src="https://via.placeholder.com/20x20/00bcd4/ffffff?text=L" alt="icon">
+    <span>Lorem</span>
+  </div>
+  </div>
+    <h2 class="tabfirst">Lorem ipsum dolor sit amet consectetu</h2>
+      <p>Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac pellentesque ut cursus tortor ut ac neque. Egestas arcu enim erat metus sed amet. Lobortis lectus tincidunt suspendisse lobortis sit massa placerat risus platea. </p>
+ <!-- Tabs -->
+  
+
+  <!-- Tabs -->
+  <div class="denial-tabs">
+    <div class="denial-tab active" onclick="openDenialTab(event, 'denial-tab1')">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="icon">
+      Denial Count
+    </div>
+    <div class="denial-tab" onclick="openDenialTab(event, 'denial-tab2')">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="icon">
+      Denial Value
+    </div>
+    <div class="denial-tab" onclick="openDenialTab(event, 'denial-tab3')">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828930.png" alt="icon">
+      Claim Denied
+    </div>
+    <div class="denial-tab" onclick="openDenialTab(event, 'denial-tab4')">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828940.png" alt="icon">
+      Reports
+    </div>
+  </div>
+
+  <!-- Tab Content -->
+  <div id="denial-tab1" class="denial-tab-content active">
+    <div class="denial-content">
+      <img src="https://via.placeholder.com/300x200.png?text=Chart+Image" alt="Chart">
+      <div class="denial-text">
+        <h2 style="text-align: inherit;">Redefining Standards with Exceptional Features</h2>
+        <p style="text-align: inherit;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius elementum tristique.</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur</li>
+          <li>Suspendisse varius elementum tristique</li>
+          <li>Duis cursus mi quis viverra ut diam</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+  <div id="denial-tab2" class="denial-tab-content">
+    <h2>Denial Value</h2>
+    <p>This is content for Denial Value.</p>
+  </div>
+
+  <div id="denial-tab3" class="denial-tab-content">
+    <h2>Claim Denied in First Submission</h2>
+    <p>This is content for Claim Denied.</p>
+  </div>
+
+  <div id="denial-tab4" class="denial-tab-content">
+    <h2>Reports</h2>
+    <p>This is content for Reports.</p>
+  </div>
+
+ 
+</section>
+
+<section class="container marquee2">
+  <div style="text-align:center;">
+  <div class="label-box">
+    <img src="/assets/Group 16318.png" alt="icon">
+    <span>Lorem</span>
+  </div>
+  </div>
+
+  <h2 style="color: #fff!important;font-size:35px">Lorem ipsum dolor sit amet consectetu</h2>
+  <p style="color:#fff;">Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac pellentesque ut cursus tortor ut ac neque. Egestas arcu enim erat metus sed amet. Lobortis lectus tincidunt suspendisse lobortis sit massa placerat risus platea.</p>
+ 
+  <marquee behavior="scroll" direction="left">
+    <img src="../images/img_nat.png" width="120" height="80" alt="Natural" />
+  </marquee>
+  <marquee behavior="scroll" direction="right">
+    <img src="../images/img_nat.png" width="120" height="80" alt="Natural" />
+  </marquee>
+
+  <div style="text-align:center;">
+    <button class="intelist">Download Integrations List <span><strong> > </strong></span></button>
+  </div>
+</section>
+
+<section class="container report">
+    <div style="text-align:center;">
+      <div class="label-box">
+    <img src="/assets/Group 16318.png" alt="icon">
+    <span>Lorem</span>
+  </div>
+  </div>
+    <h2 class="tabfirst">Lorem ipsum dolor sit amet consectetu</h2>
+      <p>Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac pellentesque ut cursus tortor ut ac neque. Egestas arcu enim erat metus sed amet. Lobortis lectus tincidunt suspendisse lobortis sit massa placerat risus platea. </p>
+ <div class="denial-content2">
+      <img src="/assets/sales report.png" alt="Chart" style="padding: 20px;">
+      <div class="denial-text2">
+        <div class="timer-box">
+    <img src="/assets/Icon4.png" class="timer" alt="icon">
+   
+  </div>
+        <h2 style="text-align: inherit;">Lorem ipsum dolor sit amet consectetu</h2>
+        <p style="text-align: inherit;">      Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac pellentesque ut cursus tortor ut ac neque. Egestas arcu enim erat metus sed amet. Lobortis lectus tincidunt suspendisse lobortis sit massa placerat risus platea. </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur</li>
+          <li>Suspendisse varius elementum tristique</li>
+          <li>Duis cursus mi quis viverra ut diam</li>
+        </ul>
+      </div>
+    </div>
+ 
+
+<div class="denial-content2">
+      <div class="denial-text2">
+        <div class="timer-box">
+    <img src="/assets/Icon4.png" class="timer" alt="icon">
+   
+  </div>
+        <h2 style="text-align: inherit;">Lorem ipsum dolor sit amet consectetu</h2>
+        <p style="text-align: inherit;">      Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac pellentesque ut cursus tortor ut ac neque. Egestas arcu enim erat metus sed amet. Lobortis lectus tincidunt suspendisse lobortis sit massa placerat risus platea. </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur</li>
+          <li>Suspendisse varius elementum tristique</li>
+          <li>Duis cursus mi quis viverra ut diam</li>
+        </ul>
+      </div>
+            <img src="/assets/sales report.png" alt="Chart" style="padding: 20px;">
+
+    </div>
+
+
+    <div class="denial-content2">
+      <img src="/assets/sales report.png" alt="Chart" style="padding: 20px;">
+      <div class="denial-text2">
+        <div class="timer-box">
+    <img src="/assets/Icon4.png" class="timer" alt="icon">
+   
+  </div>
+        <h2 style="text-align: inherit;">Lorem ipsum dolor sit amet consectetu</h2>
+        <p style="text-align: inherit;">      Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac pellentesque ut cursus tortor ut ac neque. Egestas arcu enim erat metus sed amet. Lobortis lectus tincidunt suspendisse lobortis sit massa placerat risus platea. </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur</li>
+          <li>Suspendisse varius elementum tristique</li>
+          <li>Duis cursus mi quis viverra ut diam</li>
+        </ul>
+      </div>
+    </div>
+    </section>
+    
+  <section class="container email">
+  <div style="text-align:center;">
+    <div class="label-box" style="color: #fff; border: 1px solid #C8C8C81A; background: #FFFFFF1A;">
+      <img src="/assets/wireframe.png" alt="icon">
+      <span>Playbook Section</span>
+    </div>
+  </div>
+
+  <h2 style="color: #fff!important;font-size:35px">The best healthcare analytics platform for revenue cycle and operations management</h2>
+  <p style="color:#fff;">
+      Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac pellentesque ut cursus tortor ut ac neque. Egestas arcu enim erat metus sed amet. Lobortis lectus tincidunt suspendisse lobortis sit massa placerat risus platea. </p>
+
+ 
+<div style="text-align:center;margin-top: 20px;">
+   <div class="email-box">
+    <input type="email" placeholder="Your Business Email">
+    <button>Get a Playbook</button>
+  </div>
+  </div>
+</section>
+
+<section class="container tabs_first">
+    <div style="text-align:center;">
+     <div class="label-box">
+    <img src="/assets/Group 16318.png" alt="icon">
+    <span>Lorem</span>
+  </div>
+  </div>
+    <h2 class="tabfirst">Lorem ipsum dolor sit amet consectetu</h2>
+      <p>Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac pellentesque ut cursus tortor ut ac neque. Egestas arcu enim erat metus sed amet. Lobortis lectus tincidunt suspendisse lobortis sit massa placerat risus platea. </p>
+ <div style="text-align:center;">
+<ul class="horizontal-tick-list">
+    <li>Cancel anytime</li>
+    <li>Access to all content</li>
+    <li>Expert Support</li>
+</ul>
+  </div>
+   <section class="video-section">
+    <div class="video-wrapper">
+      <!-- Video file from assets -->
+      <video id="myVideo" poster="/assets/trigger-video.png">
+        <source src="/assets/professional.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+   <!-- Play button overlay -->
+      <div class="play-btn" onclick="playVideo()"></div>
+   
+    </div>
+  </section>
+   
+</section>
+ <section class="container email">
+  <div style="text-align:center;">
+    <div class="label-box" style="color: #fff; border: 1px solid #C8C8C81A; background: #FFFFFF1A;">
+      <img src="/assets/wireframe.png" alt="icon">
+      <span>Playbook Section</span>
+    </div>
+  </div>
+
+  <h2 style="color: #fff!important;font-size:35px">
+ Lorem ipsum dolor sit amet consectetur  </h2>
+  <p style="color:#fff;">
+      Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac pellentesque ut cursus tortor ut ac neque. Egestas arcu enim erat metus sed amet. Lobortis lectus tincidunt suspendisse lobortis sit massa placerat risus platea. </p>
+
+ <section class="twocol-section">
+    <!-- Card 1 -->
+    <div class="twocol-card">
+      <img src="/assets/credit_balance-removebg-preview.png" alt="Chart Image">
+      <h3>Lorem ipsum dolor</h3>
+      <p>
+        Create status updates faster, with AI pulling from real-time work data to identify risks,
+        open questions, and roadblocks standing in the way of hitting goals.
+      </p>
+      <a href="#">Visit our service →</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="twocol-card">
+      <img src="/assets/salestrend-removebg-preview.png" alt="Chart Image">
+      <h3>Lorem ipsum dolor</h3>
+      <p>
+        Create status updates faster, with AI pulling from real-time work data to identify risks,
+        open questions, and roadblocks standing in the way of hitting goals.
+      </p>
+      <a href="#">Visit our service →</a>
+    </div>
+  </section>
+
+</section>
+
+
+<section class="cs-section" aria-label="Case Studies section">
+  <!-- top row -->
+     <div class="label-box">
+    <img src="/assets/Group 16318.png" alt="icon">
+    <span>Case Studies</span>
+  </div>
+  <div class="cs-top">
+  
+  
+    <div class="cs-title">
+      <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    </div>
+
+    <div class="cs-intro">
+      Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac
+      pellentesque ut cursus tortor ut ac neque.    Lorem ipsum dolor sit amet consectetur.
+    </div>
+  </div>
+
+  
+
+  <!-- tabs -->
+  <div class="cs-tabs" role="tablist" aria-label="Case study tabs">
+    <button class="cs-tab cs-active" role="tab" aria-selected="true" onclick="csOpenTab(event,'cs-panel-1')" id="cs-tab-1">
+      <img src="/assets/Untitled-removebg-preview.png" alt=""><!--<span>Case Study A</span> -->
+    </button>
+
+    <button class="cs-tab" role="tab" aria-selected="false" onclick="csOpenTab(event,'cs-panel-2')" id="cs-tab-2">
+      <img src="/assets/Sarasota'.png" alt=""><!--<span>Case Study A</span> -->
+    </button>
+
+    <button class="cs-tab" role="tab" aria-selected="false" onclick="csOpenTab(event,'cs-panel-3')" id="cs-tab-3">
+      <img src="/assets/ATI.png" alt=""><!--<span>Case Study A</span> -->
+    </button>
+  </div>
+
+  <!-- tab contents -->
+  <div class="cs-tab-contents">
+
+    <!-- panel 1 -->
+    <div id="cs-panel-1" class="cs-tab-panel cs-show" role="tabpanel" aria-labelledby="cs-tab-1">
+      <div class="cs-panel-inner">
+        <div class="cs-panel-left">
+          <div>
+            <h2>How Double The Donation Increased Their Outbound Revenue By <span style="color:#00b3b3">93%</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Id et fames in senectus. Volutpat viverra ornare
+              hendrerit purus. Lorem ipsum dolor sit amet consectetur. Id et fames in senectus. Volutpat viverra ornare
+              hendrerit purus. Lorem ipsum dolor sit amet consectetur. Id et fames in senectus. Volutpat viverra ornare
+              hendrerit purus.
+            </p>
+          </div>
+
+          <div>
+            <div class="cs-stats">
+              <div class="cs-stat">
+                                <small>Increase in Deals Booked</small>
+
+                <div class="num">30% </div>
+              </div>
+              <div class="cs-stat">
+                                <small>Increase in Deals Booked</small>
+
+                <div class="num">30%</div>
+              </div>
+            </div>
+
+            <a class="cs-cta" href="#" aria-label="Read Case Study A">Read Case Study →</a>
+          </div>
+        </div>
+
+        <div class="cs-panel-right" aria-hidden="true">
+          <img src="/assets/caseStudyCardImg3.webp.png" alt="Case study video thumbnail">
+          <!--<div class="cs-play-circle" title="Play"></div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- panel 2 -->
+    <div id="cs-panel-2" class="cs-tab-panel" role="tabpanel" aria-labelledby="cs-tab-2">
+      <div class="cs-panel-inner">
+        <div class="cs-panel-left">
+          <div>
+            <h2>Case Study B — Improving Revenue Cycle</h2>
+            <p>
+              Short lead-in about the customer and the measurable outcomes they achieved with the product.
+            </p>
+          </div>
+
+          <div>
+            <div class="cs-stats">
+              <div class="cs-stat">
+            <small>Reduction in Denials</small>
+
+                <div class="num">45%</div>
+              </div>
+              <div class="cs-stat">
+                <small>Faster Processing Time</small>
+                <div class="num">18%</div>
+               
+              </div>
+            </div>
+
+            <a class="cs-cta" href="#" aria-label="Read Case Study B">Read Case Study →</a>
+          </div>
+        </div>
+
+        <div class="cs-panel-right" aria-hidden="true">
+          <img src="/assets/caseStudyCardImg3.webp.png" alt="Case study video thumbnail">
+        </div>
+      </div>
+    </div>
+
+    <!-- panel 3 -->
+    <div id="cs-panel-3" class="cs-tab-panel" role="tabpanel" aria-labelledby="cs-tab-3">
+      <div class="cs-panel-inner">
+        <div class="cs-panel-left">
+          <div>
+            <h2>Case Study C — Operational Improvements</h2>
+            <p>
+              A short summary highlighting operational improvements and ROI delivered.
+            </p>
+          </div>
+
+          <div>
+            <div class="cs-stats">
+              <div class="cs-stat">
+                <div class="num">22%</div>
+                <small>Cost Savings</small>
+              </div>
+              <div class="cs-stat">
+                <div class="num">12%</div>
+                <small>Faster Turnaround</small>
+              </div>
+            </div>
+
+            <a class="cs-cta" href="#" aria-label="Read Case Study C">Read Case Study →</a>
+          </div>
+        </div>
+
+        <div class="cs-panel-right" aria-hidden="true">
+          <img src="/assets/caseStudyCardImg3.webp.png" alt="Case study video thumbnail">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container sl-section " aria-label="Example slider" style="background: linear-gradient(0deg, #F8FCFC, #F8FCFC),
+linear-gradient(0deg, #F4FEFE, #F4FEFE);">
+    <div style="text-align:center;">
+
+   <div class="label-box">
+    <img src="/assets/Group 16318.png" alt="icon">
+    <span>Case Studies</span>
+  </div>
+  </div>
+     <h2 class="tabfirst">Lorem ipsum dolor sit amet consectetu</h2>
+      <p>Lorem ipsum dolor sit amet consectetur. Mi nullam interdum varius laoreet. Id eleifend ac pellentesque ut cursus tortor ut ac neque. Egestas arcu enim erat metus sed amet. Lobortis lectus tincidunt suspendisse lobortis sit massa placerat risus platea. </p>
+
+
+  <div class="sl-viewport">
+    <div class="sl-track" id="slTrack">
+      <!-- slide items. note: title moved into overlay inside .sl-media -->
+      <article class="sl-card" data-index="0">
+        <div class="sl-media">
+          <img src="/assets/Content.png" alt="slider">
+          <div class="sl-title-overlay">
+            <h3>Hospitals and Health Systems</h3>
+            <div class="sl-overlay-action" aria-hidden="true">➜</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="sl-card" data-index="1">
+        <div class="sl-media">
+          <img src="/assets/Content.png" alt="slider">
+          <div class="sl-title-overlay">
+            <h3>Clinics & Providers</h3>
+            <div class="sl-overlay-action" aria-hidden="true">➜</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="sl-card" data-index="2">
+        <div class="sl-media">
+          <img src="/assets/Content.png" alt="slider">
+          <div class="sl-title-overlay">
+            <h3>Payers & Insurers</h3>
+            <div class="sl-overlay-action" aria-hidden="true">➜</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="sl-card" data-index="3">
+        <div class="sl-media">
+          <img src="/assets/Content.png" alt="slider">
+          <div class="sl-title-overlay">
+            <h3>Pharmacies</h3>
+            <div class="sl-overlay-action" aria-hidden="true">➜</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- 
+  <div class="sl-controls" role="group" aria-label="Slider controls">
+    <div class="sl-arrows" aria-hidden="false">
+      <button class="sl-btn" id="slPrevBtn" aria-label="Previous">‹</button>
+      <button class="sl-btn" id="slNextBtn" aria-label="Next">›</button>
+    </div>
+
+    <div class="sl-progress-wrap" aria-hidden="false">
+      <div class="sl-progress" aria-hidden="true">
+        <div class="sl-progress-fill" id="slProgress"></div>
+      </div>
+    </div>
+  </div>   -->
+<div class="sl-controls" role="group" aria-label="Slider controls">
+  <div class="sl-arrows" aria-hidden="false">
+    <button class="sl-btn" id="slPrevBtn" aria-label="Previous">
+      <img src="/assets/Button - Previous slide.png" alt="Previous" />
+    </button>
+    <button class="sl-btn" id="slNextBtn" aria-label="Next">
+      <img src="/assets/Button - Next slide.png" alt="Next" />
+    </button>
+  </div>
+
+  <div class="sl-progress-wrap" aria-hidden="false">
+    <div class="sl-progress" aria-hidden="true">
+      <div class="sl-progress-fill" id="slProgress"></div>
+    </div>
+  </div>
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+/* Unique slider JS (sl- prefix) */
+
+(function(){
+  const track = document.getElementById('slTrack');
+  const slides = Array.from(track.children);
+  const prevBtn = document.getElementById('slPrevBtn');
+  const nextBtn = document.getElementById('slNextBtn');
+  const progressFill = document.getElementById('slProgress');
+
+  let currentIndex = 0;
+  let slidesPerView = computeSlidesPerView();
+  let gap = parseFloat(getComputedStyle(track).gap || 24);
+  let slideWidth = 0;
+
+  function computeSlidesPerView(){
+    const w = window.innerWidth;
+    if (w <= 600) return 1;   // Mobile
+    if (w <= 1000) return 2;  // Tablet
+    return 3;                 // Desktop
+  }
+
+  function updateValues(){
+    slidesPerView = computeSlidesPerView();
+    gap = parseFloat(getComputedStyle(track).gap || 24);
+    slideWidth = slides[0].getBoundingClientRect().width + gap;
+  }
+
+  function clampIndex(i){
+    const maxIndex = Math.max(0, slides.length - slidesPerView);
+    return Math.min(maxIndex, Math.max(0, i));
+  }
+
+  function slGoTo(index){
+    currentIndex = clampIndex(index);
+    const translateX = -(currentIndex * slideWidth);
+    track.style.transform = `translateX(${translateX}px)`;
+    updateProgress();
+    updateButtons();
+  }
+
+  // ✅ FIXED: progress starts filled for first slide, increases gradually
+  function updateProgress(){
+    const maxSteps = slides.length - slidesPerView + 1;
+    const stepPercent = 100 / maxSteps;
+    const progress = (currentIndex + 1) * stepPercent;
+    progressFill.style.width = progress + '%';
+  }
+
+  function updateButtons(){
+    const maxIndex = slides.length - slidesPerView;
+    prevBtn.disabled = currentIndex <= 0;
+    nextBtn.disabled = currentIndex >= maxIndex;
+  }
+
+  // Buttons
+  nextBtn.addEventListener('click', () => slGoTo(currentIndex + 1));
+  prevBtn.addEventListener('click', () => slGoTo(currentIndex - 1));
+
+  // Keyboard
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') slGoTo(currentIndex + 1);
+    if (e.key === 'ArrowLeft') slGoTo(currentIndex - 1);
+  });
+
+  // Resize
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      track.style.transition = 'none';
+      updateValues();
+      slGoTo(currentIndex);
+      setTimeout(() => (track.style.transition = ''), 50);
+    }, 120);
+  });
+
+  // ✅ Initialize properly so first slide shows progress
+  updateValues();
+  slGoTo(0);
+})();
+
+</script>
+
+
+<script>
+  /* Unique JS for case-studies tabs */
+  function csOpenTab(evt, panelId) {
+    // tabs
+    document.querySelectorAll('.cs-tab').forEach(btn=>{
+      btn.classList.remove('cs-active');
+      btn.setAttribute('aria-selected','false');
+    });
+    // panels
+    document.querySelectorAll('.cs-tab-panel').forEach(p=>{
+      p.classList.remove('cs-show');
+    });
+
+    // activate requested tab & panel
+    evt.currentTarget.classList.add('cs-active');
+    evt.currentTarget.setAttribute('aria-selected','true');
+
+    const panel = document.getElementById(panelId);
+    if(panel) panel.classList.add('cs-show');
+
+    // optional: scroll into view the panel (nice for mobile)
+    panel.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+</script>
+
+
+
+
+ <script>
+    function toggleVideo() {
+      let video = document.getElementById("myVideo");
+      let btn = document.getElementById("playBtn");
+
+      if (video.paused) {
+        video.play();
+        btn.style.display = "none"; // hide button
+      } else {
+        video.pause();
+        btn.style.display = "flex"; // show button again
+      }
+    }
+  </script>
+ <script>
+    function openDenialTab(evt, tabId) {
+      // Hide all tab contents
+      document.querySelectorAll('.denial-tab-content').forEach(c => c.classList.remove('active'));
+      // Remove active class from all tabs
+      document.querySelectorAll('.denial-tab').forEach(t => t.classList.remove('active'));
+
+      // Show clicked tab content
+      document.getElementById(tabId).classList.add('active');
+      // Set clicked tab active
+      evt.currentTarget.classList.add('active');
+    }
+  </script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
