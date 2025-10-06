@@ -10,31 +10,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+<nav class="ws-navbar">
+  <div class="ws-navbar-container">
+    <!-- Logo -->
+    <div class="ws-logo">
+           <img src="/assets/logo1.png" alt="" class="logoimg">
+    </div>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="/assets/logo1.png" alt="" class="logoimg">
-    </div>
-    <nav>
-      <ul id="menu">
-        <li><a href="#">Platform </a></li>
-        <li><a href="#">Who We Serve</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Events</a></li>
-        <button class="btn-demo">Request a Demo</button>
-      </ul>
-    </nav>
-    <div class="hamburger" onclick="toggleMenu()">
+    <!-- Hamburger -->
+    <button class="ws-hamburger" id="wsHamburger" aria-label="Toggle navigation">
       <span></span>
       <span></span>
       <span></span>
-    </div>
-  </header>
+    </button>
+
+    <!-- Nav Links -->
+    <ul class="ws-nav-links" id="wsNavMenu">
+      <!-- Close button (mobile only) -->
+      <button class="ws-close-btn" id="wsCloseBtn" aria-label="Close menu">✕</button>
+
+      <li><a href="#">Platform</a></li>
+      <li><a href="#">Who We Serve</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Events</a></li>
+      <button class="ws-btn-demo">Request a Demo</button>
+    </ul>
+  </div>
+</nav>
+
+ 
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" style="margin-top: 40px;
+">
     <div class="hero-content">
          <div class="label-box">
     <img src="/assets/Group 16318.png" alt="icon">
@@ -856,6 +865,9 @@ Find quick solutions and helpful tips for using Zeepay. We’ve compiled answers
 
   </div>
 </section>
+
+
+
 <footer class="site-footer">
   <div class="footer-inner">
 
@@ -873,62 +885,7 @@ Find quick solutions and helpful tips for using Zeepay. We’ve compiled answers
       </div>
     </div>
 
-    <!-- Menu Columns -->
-    <nav class="footer-grid" aria-label="Footer navigation">
-      <div class="footer-col">
-        <h4>Platform</h4>
-        <ul>
-          <li><a href="#">Product Tour</a></li>
-          <li><a href="#">EHRs & Integration</a></li>
-          <li><a href="#">Book a demo</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Solutions</h4>
-        <ul>
-          <li><a href="#">Healthcare Predictive Analytics</a></li>
-          <li><a href="#">Revenue Cycle Optimization</a></li>
-          <li><a href="#">Operational Excellence</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Solutions for</h4>
-        <ul>
-          <li><a href="#">CFOs</a></li>
-          <li><a href="#">COOs</a></li>
-          <li><a href="#">CEOs</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Comparisons</h4>
-        <ul>
-          <li><a href="#">WhiteSpace vs Epic</a></li>
-          <li><a href="#">WhiteSpace vs Cerner</a></li>
-          <li><a href="#">WhiteSpace vs Meditech</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Partners</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Data Sheets</a></li>
-          <li><a href="#">Infographics</a></li>
-        </ul>
-      </div>
-    </nav>
+   
 
     <!-- Bottom Row -->
     <div class="footer-bottom">
@@ -970,9 +927,6 @@ Find quick solutions and helpful tips for using Zeepay. We’ve compiled answers
 
   </div>
 </footer>
-
-
-
 
 
 
@@ -1392,11 +1346,44 @@ Find quick solutions and helpful tips for using Zeepay. We’ve compiled answers
       evt.currentTarget.classList.add('active');
     }
   </script>
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("active");
+<!-- ===== Script ===== -->
+<script>
+  const wsHamburger = document.getElementById('wsHamburger');
+  const wsNavMenu = document.getElementById('wsNavMenu');
+  const wsCloseBtn = document.getElementById('wsCloseBtn');
+
+  // Toggle open/close
+  wsHamburger.addEventListener('click', () => {
+    wsHamburger.classList.toggle('ws-active');
+    wsNavMenu.classList.toggle('ws-active');
+  });
+
+  // Close when clicking the X button (mobile only)
+  wsCloseBtn.addEventListener('click', () => {
+    wsHamburger.classList.remove('ws-active');
+    wsNavMenu.classList.remove('ws-active');
+  });
+
+  // Close when clicking a link
+  document.querySelectorAll('.ws-nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      wsHamburger.classList.remove('ws-active');
+      wsNavMenu.classList.remove('ws-active');
+    });
+  });
+
+  // Close when clicking outside the menu
+  document.addEventListener('click', (e) => {
+    const isInsideMenu = wsNavMenu.contains(e.target);
+    const isHamburger = wsHamburger.contains(e.target);
+    if (!isInsideMenu && !isHamburger) {
+      wsHamburger.classList.remove('ws-active');
+      wsNavMenu.classList.remove('ws-active');
     }
-  </script>
+  });
+</script>
+
+
 
 </body>
 </html>

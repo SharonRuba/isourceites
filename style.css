@@ -45,46 +45,10 @@ p{
       color: #0077b6;
     }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 20px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-
-    .btn-demo {
-      padding: 10px 20px;
-     background: #1DB1B8;
-      color: #fff;
-      box-shadow: 0px 2px 5px 0px #0000001A;
-margin: 0px!important;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
 img.logoimg {
     width: 100%;
     height: 59px;
 }
-    /* Hamburger */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
-    }
-
-    .hamburger span {
-      width: 25px;
-      height: 3px;
-      background: #333;
-    }
-
     /* Hero Section */
     .hero {
       display: flex;
@@ -1971,4 +1935,158 @@ img.marqimg2 {
   .footer-brand {
     min-width: auto;
   }
+}
+/* ===== Navbar Wrapper ===== */
+.ws-navbar {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.ws-navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== Logo ===== */
+.ws-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ws-logo img {
+  width: 140px;
+  height: auto;
+}
+
+/* ===== Nav Menu ===== */
+.ws-nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+
+.ws-nav-links li a {
+  text-decoration: none;
+  color: #1a4c54;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.ws-nav-links li a:hover {
+  color: #1db1b8;
+}
+
+/* ===== Button ===== */
+.ws-btn-demo {
+  padding: 10px 18px;
+  background-color: #1db1b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(29,177,184,0.25);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.ws-btn-demo:hover {
+  background-color: #169ca3;
+}
+
+/* ===== Hamburger ===== */
+.ws-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.ws-hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #1a4c54;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* ===== Mobile Menu ===== */
+@media (max-width: 860px) {
+  .ws-nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #fff;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  }
+
+  .ws-nav-links.ws-active {
+    display: flex;
+  }
+
+  .ws-nav-links li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .ws-btn-demo {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .ws-hamburger {
+    display: flex;
+  }
+
+  /* Mobile-only close button */
+  .ws-close-btn {
+    display: block;
+    align-self: flex-end;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: #1a4c54;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
+/* Hide close button on desktop */
+@media (min-width: 861px) {
+  .ws-close-btn {
+    display: none !important;
+  }
+}
+
+/* ===== Hamburger Animation ===== */
+.ws-hamburger.ws-active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.ws-hamburger.ws-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.ws-hamburger.ws-active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
