@@ -2059,7 +2059,7 @@ img.marqimg2 {
 
   /* Mobile-only close button */
   .ws-close-btn {
-    display: block;
+    display: none;
     align-self: flex-end;
     background: transparent;
     border: none;
