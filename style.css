@@ -114,7 +114,7 @@ img.logoimg {
 
     /* Responsive */
     @media (max-width: 768px) {
-      nav ul {
+    /*  nav ul {
         display: none;
         flex-direction: column;
         background: #fff;
@@ -128,7 +128,7 @@ img.logoimg {
 
       nav ul.active {
         display: flex;
-      }
+      }   */
 
       .hamburger {
         display: flex;
@@ -2090,3 +2090,195 @@ img.marqimg2 {
 .ws-hamburger.ws-active span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
+
+
+
+
+.wsf-footer {
+    background: #fff;
+    color: #0b2f34;
+    border-top: 1px solid rgba(11,47,52,0.06);
+    font-size: 14px;
+    overflow-x: hidden; /* defensive */
+  }
+
+  .wsf-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 36px 20px 24px;
+    overflow-x: hidden; /* defensive */
+  }
+
+  /* TOP */
+  .wsf-top {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    margin-bottom: 26px;
+    flex-wrap: wrap;
+    min-width: 0; /* allow children to shrink */
+  }
+
+  .wsf-logoimg {
+    width: 120px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+  }
+
+  .wsf-copy {
+    color: #4b6b6d;
+    line-height: 1.5;
+    font-size: 13px;
+    max-width: 680px;
+  }
+
+  /* GRID */
+  .wsf-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px 28px;
+    margin-bottom: 30px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .wsf-col { min-width: 0; } /* allow children to shrink in flex/grid contexts */
+
+  .wsf-col-title {
+    font-size: 13px;
+    color: #0b5560;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .wsf-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wsf-list-item {
+    margin-bottom: 8px;
+  }
+
+  .wsf-link {
+    text-decoration: none;
+    color: #346168;
+    font-weight: 500;
+    font-size: 13px;
+    display: inline-block;
+    max-width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .wsf-link:hover {
+    color: #0f8c92;
+    text-decoration: underline;
+  }
+
+  /* BOTTOM */
+  .wsf-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-top: 1px solid rgba(11,47,52,0.04);
+    padding-top: 16px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+
+  .wsf-bottom-left {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .wsf-bottom-link {
+    color: #6a8a8c;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .wsf-bottom-link:hover {
+    text-decoration: underline;
+    color: #0f8c92;
+  }
+
+  .wsf-bottom-center {
+    color: #6a8a8c;
+    font-size: 13px;
+    text-align: center;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .wsf-bottom-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* social icons */
+  .wsf-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid rgba(11,47,52,0.04);
+    color: #0b66a0;
+    text-decoration: none;
+  }
+
+  .wsf-social:hover { background: rgba(11,102,160,0.05); }
+  .wsf-social-icon { display: block; }
+
+  /* -----------------
+     Responsive rules
+     ----------------- */
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .wsf-inner { padding: 32px 18px; }
+    .wsf-grid { grid-template-columns: repeat(3, 1fr); gap: 18px 20px; }
+    .wsf-top { flex-direction: column; gap: 12px; }
+    .wsf-copy { max-width: 100%; }
+    .wsf-bottom { flex-wrap: wrap; gap: 10px; }
+    .wsf-bottom-center { order: 2; width: 100%; margin-top: 10px; text-align: center; }
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .wsf-inner { padding: 24px 12px; }
+    .wsf-grid { grid-template-columns: 1fr; gap: 12px 0; }
+    .wsf-col { padding-bottom: 6px; }
+    .wsf-top { gap: 10px; }
+    .wsf-logoimg { width: 100px; }
+    .wsf-copy { font-size: 13px; color: #4b6b6d; }
+    .wsf-bottom { flex-direction: column; align-items: stretch; gap: 12px; text-align: center; }
+    .wsf-bottom-left { justify-content: center; }
+    .wsf-bottom-right { justify-content: center; }
+    .wsf-bottom-center { order: 1; }
+  }
+
+  /* Defensive: ensure footer links cannot be overridden by global nav/ul rules */
+  .wsf-footer .wsf-list .wsf-link {
+    all: unset;                 /* clear global link styles */
+    display: inline-block;
+    color: #346168;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    line-height: 1.4;
+  }
+  .wsf-footer .wsf-list .wsf-link:hover {
+    color: #0f8c92;
+    text-decoration: underline;
+  }
